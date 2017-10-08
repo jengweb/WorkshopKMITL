@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KMITL-Wallet : Transfer</title>
+</head>
+<body>
+	<div>
+		<h1>KMITL Wallet : Transfer</h1>
+		<h2>KMITL to KMITL</h2>
+	</div>
+	<div>
+		<form action="{{ url_for('contransfer') }}" method="post">
+		  KMITL ID : <br>
+		  <input type="text" name="id" ><br>
+		  Amount : <br>
+		  <input type="text" name="amount" ><br><br>
+		  <input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</body>
+</html>

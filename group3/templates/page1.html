@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<title>HTML Tutorial</title>
+<body>
+
+  <div class="container">
+  <div class="jumbotron" style="background-color:#660000">
+    <h1><font face="Tahoma" color="white">Donate by KMITL Wallet</font></h1>
+    <p><font face="Tahoma" color="white">เงินทุกบานทุกสตางค์ของคุณมีคุณค่าเสมอ.</font></p>
+  </div>
+</div>
+     <br/>
+
+      <div class="container-fluid" >
+       <table style="width:100%; border: 1px solid black; border-collapse: collapse;"> <!--ขยายเต็มหน้าจอ ,แต่ละคำสั่งของstlye จะคั่นด้วย ; border = ขอบของ table-->
+         <tr> <!-- 1 แถว-->
+           <th>Type</th> <!-- 1 คอลัม-->
+           <th>List</th>
+         </tr>
+         <tr>
+           <td>
+            <pre>
+              <button type="button" class="btn" onclick="{{ url_for('result') }} method=['POST']">เพื่อการศึกษา</button>
+
+              <button type="button" class="btn">เพื่อโรงพยาบาล</button>
+
+              <button type="button" class="btn">ระดมทุน</button>
+            </pre>
+           </td>
+           <td>
+              <p><a href="Donate_Detail.html">(1.)......................................................</a></p>
+              <p>(2.)......................................................</p>
+              <p>(3.)......................................................</p>
+              <p>(4.)......................................................</p>
+              <p>(5.)......................................................</p>
+              <p>(6.)......................................................</p>
+           </td> <!-- 1 คอลัม-->
+         </tr>
+       </table>
+
+
+      <div class="container-fluid">
+
+          <form action="{{ url_for('result') }}" method="post">
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey"><br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+</body>
+</html>
+<!--  comment -->

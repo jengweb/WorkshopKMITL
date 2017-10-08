@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Promotiion Detail</title>
+</head>
+<body>
+
+  <header>
+<h1 style="background-color:rgba(235, 129, 247, 0.56);">Promotion Detail</h1>
+  </header>
+<style>
+header, footer {
+    padding: 2em;
+    color: white;
+    background-color: #855C85;
+    clear: left;
+    text-align: center;
+}
+</style>
+    <h2 style="background-color: #855C85; color:#FFFFFF ; ">NAME : {{point}}</h1>
+  </style>
+	<table style="width:100%">
+  <tr>
+    <th style = "color:#855C85 ;">name : {{firstname}}</th>
+    <th style = "color:#855C85 ;">AccountID : {{accountID}}</th> 
+    <th style = "color:#855C85 ;">Point : {{point}} </th>
+  </tr>
+
+
+<table style="width:100%; border: 1px solid #855C85; border-collapse: collapse ">
+    <tr style = "color:#855C85">
+      <th>Promotion Detail</th>
+    </tr>
+    <tr>
+      <td style = "color:#855C85 ;">ID Point : </td>
+    </tr>
+  </table>
+
+</style>
+  <form action="{{ url_for('submit')}}" method="post">
+
+    <input type="submit" value="submit">
+  </form>
+  
+
+  <!--<p>My first paragraph.</p>-->
+<!--<img src="./images/IT.jpg" alt="HTML5 Icon" style="width:128px;height:128px;">-->
+ <!-- <form action="{{url_for('result')}}" method="post">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+  </form>-->
+</body>
+</html>

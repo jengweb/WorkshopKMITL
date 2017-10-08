@@ -1,0 +1,34 @@
+<html>
+<head>
+
+
+</head>
+
+<body>
+<header>
+		<h1 style="background-color:rgba(235, 129, 247, 0.56);">Promotion Detail</h1>
+  	</header>
+	<div>
+		<style>
+				header, footer {
+    	padding: 2em;
+    	color: white;
+    	background-color: #855C85;
+    	clear: left;
+    	text-align: center;
+		}
+</style>
+	<table style="width:100% ; text-align:center ">
+  <tr>
+    <th>name {{ firstname}}</th>
+    <th>AccountID {{ accountID}}</th> 
+    <th>Point {{point}} point</th>
+  </tr>
+	<form action="{{ url_for('choose')}}" method="post">
+
+		<input type="submit" value="Choose">
+	</form>
+ 	
+
+</body>
+</html>

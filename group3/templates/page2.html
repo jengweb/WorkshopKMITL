@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+  <h1>{{ donate_id }} </h1>
+  <h2>{{ donate_money }} </h2>
+  <h3>{{ account_id }}
+
+
+
+    <button type="button" class="btn">ยืนยัน</button>
+
+    <button type="button" class="btn">ยกเลิก</button>
+
+    <form action="{{ url_for('result') }}" method="post">
+
+    <input type="submit" value="ยืนยัน">
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<title>HTML Tutorial</title>
+<body>
+
+  <div class="container">
+  <div class="jumbotron" style="background-color:#660000">
+    <h1><font face="Tahoma" color="white">Donate by KMITL Wallet</font></h1>
+    <p><font face="Tahoma" color="white">เงินทุกบานทุกสตางค์ของคุณมีคุณค่าเสมอ.</font></p>
+    <p><font face="Tahoma" color="white">กลุ่ม ชาย ฉะ กัน</font></p>
+  </div>
+</div>
+     <br/>
+
+
+       <table style="width:100%; border: 1px solid black; border-collapse: collapse;"> <!--ขยายเต็มหน้าจอ ,แต่ละคำสั่งของstlye จะคั่นด้วย ; border = ขอบของ table-->
+          <tr>
+            <button type="button" class="btn btn-default"> < Previous </button>
+          </tr>
+          <tr>
+
+                  <br/>
+                  <form action="{{ url_for('result') }}" method="post">
+                  ระบุชื่อ:<br>
+                  <input type="text" name="donate_id" value="1000"><br>
+                  ระบุเงิน:<br>
+                  <input type="text" name="donate_money" value="500"><br>
+                  <input type="submit" value="Submit">
+                </form>
+          </tr>
+        </table>
+
+        <!--  <form action="{{ url_for('result') }}" method="post">
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey"><br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse"><br><br>
+          <input type="submit" value="Submit">
+        </form> -->
+</body>
+</html>
+<!--  comment -->

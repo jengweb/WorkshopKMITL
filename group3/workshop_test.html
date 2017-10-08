@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<title>HTML Tutorial</title>
+<body>
+
+  <h1>This is a heading</h1> <!-- header h1,h2,h3,h4,h5,h6 -->
+  <h2>Hello world</h2>
+
+  <p>This is a paragraph.</p> <!--  paragraph , div = แบ่งส่วนๆ -->
+  <p><font face="Tahoma" color="green">This is some text!
+  l;l'l'l'</font></p>
+      <div>1 2 3 </br>
+        panda
+        ssss
+       </div>
+     </br>
+       <p>Hello</p>
+     </br>
+       <table style="width:80%; border: 1px solid black; border-collapse: collapse;"> <!--ขยายเต็มหน้าจอ ,แต่ละคำสั่งของstlye จะคั่นด้วย ; border = ขอบของ table-->
+         <tr> <!-- 1 แถว-->
+           <th>Firstname</th> <!-- 1 คอลัม-->
+           <th>Lastname</th>
+           <th>Age</th>
+         </tr>
+         <tr>
+           <td>Jill</td>
+           <td>Smith</td>
+           <td>50</td>
+         </tr>
+         <tr>
+           <td>Eve</td>
+           <td>Jackson</td>
+           <td>94</td>
+         </tr>
+       </table>
+      <img src="kkk.jpg" alt="Mountain View" style="width:304px;height:228px;"> <!--src = source -->
+
+
+
+          <form action="{{ url_for('result') }}" methods="post">
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey"><br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+
+
+</body>
+</html>
+<!--  comment -->

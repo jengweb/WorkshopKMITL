@@ -1,7 +1,7 @@
 import csv
 import pandas as pd
 def read_file():
-    with open('test2.csv', 'r') as f:
+    with open('test.csv', 'r') as f:
       reader = csv.reader(f)
       my_list = list(reader)
     return(my_list)
@@ -12,7 +12,7 @@ def main():
     print(list)
     array_length = len(list)    
     data  = input("Enter data: ")
-    print(list[1][1])
+    print(list[1][2])
     
 with open('test.csv', 'w', newline='') as csvfile:
     fieldnames = ['name', 'id','bal']

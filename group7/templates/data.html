@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+	<header>
+		<h1 style="background-color:rgba(235, 129, 247, 0.56);">Promotion Detail</h1>
+  	</header>
+	<div>
+		<style>
+				header, footer {
+    	padding: 2em;
+    	color: white;
+    	background-color: #855C85;
+    	clear: left;
+    	text-align: center;
+		}
+</style>
+	<center>
+	<form action="{{ url_for('result')}}" method="post">
+
+		First name:<br>
+		<input type="text" name="firstname" value=""><br>
+		AccountID:<br>
+		<input type="text" name="accountID" value=""><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	</center>
+	
+</body>
+</html>
