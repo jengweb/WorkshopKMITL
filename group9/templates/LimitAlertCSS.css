@@ -1,0 +1,23 @@
+#TriIcon{
+
+	font-size: 8em;
+	color: #ff9999;
+	}
+
+.textLabel{
+	text-align: center;
+}
+
+.progress {
+
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  background-color: #eee;
+}
+
+#payment{
+
+	text-align: center;
+}

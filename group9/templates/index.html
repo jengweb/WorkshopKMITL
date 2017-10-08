@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KMITL-Wallet</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron" style="background-color:#0D47A1">
+        <div style="padding:20px">
+          <h1 style="color:#FFFFFF">KMITL-WALLET</h1>
+          <p style="color:#FFFFFF">KMITL-WALLET </p>
+        </div>
+    </div>
+    <div class="container" style="padding:20px">
+        <form action="{{ url_for('result') }}" style="text-align:center" method="post">
+          UserID:<br>
+          <input type="text" name="userID"><br>
+          <div style="padding:10px">
+          <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+        </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

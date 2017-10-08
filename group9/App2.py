@@ -17,9 +17,9 @@ def findAvailableBalance(userID):
     with open('expenses.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for row in readCSV:
-            print(row)
-            if row[0] == userID:
-                amount += int(row[4])
+            print(row)       
+            if row[0] == userID: 
+                amount += int(row[4])    
 
     percentAmount = 100-((paymentLimit-amount)*100/paymentLimit)
 
@@ -35,9 +35,10 @@ def hello_world():
 
 @app.route('/result',methods=['POST'])
 def result():
-    userID=request.form['userID']
-    amount,paymentLimit,percentAmount=findAvailableBalance(userID)
-    return render_template('LimitAlert.html',amount=amount,paymentLimit=paymentLimit,percentAmount=percentAmount)
+    amount,paymentLimit,percentAmount=findAvailableBalance("58010000")
+    firstname=request.form['firstname']
+    lastname=request.form['lastname']
+    return render_template('HTML_demo2.html',amount=amount,paymentLimit=paymentLimit,percentAmount=percentAmount)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",debug=True)
