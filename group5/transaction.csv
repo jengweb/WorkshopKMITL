@@ -1,0 +1,4 @@
+date,transaction,type,amount,remain
+8/10/2560,topup,income,500,500
+8/10/2560,transfer,expense,200,300
+8/10/2560,transfer,expense,200,100
