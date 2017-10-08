@@ -14,12 +14,11 @@ def topUp():
 def checkB():
     listAcc=read_file2()
     price = listAcc[1][2]
-    #price = 55
+
     return render_template('checkBalance.html',price = price)
 
 @app.route('/request',methods =['POST'])
 def result():
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     serialN = request.form['lastname']
     listSerial=read_file()
     check = 0
@@ -27,11 +26,6 @@ def result():
         if listSerial[i][0] == serialN :
             check = 1
             price = listSerial[i][1]
-            listAcc=read_file2()
-            listAcc[1][2]  =  listAcc[1][2] + listSerial[i][1]
-
-
-            
     if(check == 1 ) :
         return render_template('correct.html',serialN=serialN,price = price )
     else :
