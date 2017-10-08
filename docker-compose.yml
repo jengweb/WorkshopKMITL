@@ -8,3 +8,75 @@ services:
     volumes:
       - ./group1:/code
     restart: always
+  group2:
+    container_name: group2
+    build: ./group2
+    ports:
+      - 8002:5000
+    volumes:
+      - ./group2:/code
+    restart: always
+  group3:
+    container_name: group3
+    build: ./group3
+    ports:
+      - 8003:5000
+    volumes:
+      - ./group3:/code
+    restart: always
+  group4:
+    container_name: group4
+    build: ./group4
+    ports:
+      - 8004:5000
+    volumes:
+      - ./group4:/code
+    restart: always
+  group5:
+    container_name: group5
+    build: ./group5
+    ports:
+      - 8005:5000
+    volumes:
+      - ./group5:/code
+    restart: always
+  group6:
+    container_name: group6
+    build: ./group6
+    ports:
+      - 8006:5000
+    volumes:
+      - ./group6:/code
+    restart: always
+  group7:
+    container_name: group7
+    build: ./group7
+    ports:
+      - 8007:5000
+    volumes:
+      - ./group7:/code
+    restart: always
+  group8:
+    container_name: group8
+    build: ./group8
+    ports:
+      - 8008:5000
+    volumes:
+      - ./group8:/code
+    restart: always
+  group9:
+    container_name: group9
+    build: ./group9
+    ports:
+      - 8009:5000
+    volumes:
+      - ./group9:/code
+    restart: always
+  group10:
+    container_name: group10
+    build: ./group10
+    ports:
+      - 8010:5000
+    volumes:
+      - ./group10:/code
+    restart: always

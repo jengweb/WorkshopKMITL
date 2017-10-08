@@ -1,0 +1,5 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% for row in reader: %}
+  Name {{ row['first_name'] }} Lastname {{ row['last_name']}} <br/>
+{% endfor %}
